@@ -29,5 +29,5 @@ jobs:
       - name: Installing surge
         run: npm install --global surge
       - name: deploying using surge
-        run: surge /home/mubi/Documents/GitHub/project1/ wide-eyed-hospital.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
+        run: surge ./home/mubi/Documents/GitHub/project1/ wide-eyed-hospital.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
         
